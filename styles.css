@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  border: 2px solid black;
+  height: 100px;
+  
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+
+nav {
+  border: 2px solid black;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+
+article {
+  display: inline-block;
+  width: 170vh;
+  height: 50vh;
+  vertical-align: top;
+  border: 2px solid black;
+  padding: 20px;
+  margin-top: 10px;
+
+}
+
+
+aside {
+  display: inline-block;
+  width: 31vh;
+  height: 50vh;
+  vertical-align: top;
+  border: 2px solid black;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left:5pt;
+    margin-right: 0px;
+}
+
+section.right {
+  display: inline-block;
+width: 102vh;
+height: 20vh;
+  vertical-align: top;
+  border: 2px solid black;
+  padding: 20px;
+  margin-left: 105 vh;
+  margin-top: 1px;
+}
+
+section.left{
+  display: inline-block;
+  width: 100vh;
+height: 20vh;
+  vertical-align: top;
+  border: 2px solid black;
+  padding: 20px;
+  margin-left: 105 vh;
+  margin-top: 1px;
+  margin-right: 0px;
+}
+  
+
+footer {
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  aside,
+  section.left {
+    display: none;
+  }
+
+  article,
+  section.right {
+    width: 100%;
+    display: block;
+  }
+}
